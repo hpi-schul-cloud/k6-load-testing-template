@@ -2,20 +2,14 @@
 This directory should contain option files for k6. 
 
 ## How to use
-Documentation from k6
-
-[How to use options](https://k6.io/docs/using-k6/k6-options/how-to/)
-[Environment variables](https://k6.io/docs/using-k6/environment-variables/)
+Official k6 documentation:
+- [How to use options](https://k6.io/docs/using-k6/k6-options/how-to/)
+- [Environment variables](https://k6.io/docs/using-k6/environment-variables/)
 
 
 ```javascript
 const options = JSON.parse(open(`${__ENV.OPTIONS_FILE}`));
 ```
-
-```bash
-OPTIONS_FILE=config/options/k6.json k6 run tests/api/simple.js
-```
-
 
 ## Examples
 Example option file `5s_2rps.json`:

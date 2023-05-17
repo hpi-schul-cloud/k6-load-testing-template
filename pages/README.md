@@ -1,5 +1,5 @@
 # pages
-A collection of abstraction classes to keep the actual tests concise and readble.
+A collection of abstraction classes to keep the actual tests concise and readable.
 
 For example one could create a `homepage.js` containing a `Homepage` class that deals with all the code necessary to navigate and interact with the homepage of a website.
 
@@ -10,6 +10,7 @@ import Homepage from '../../pages/homepage.js';
 
 let homepage = new Homepage(environment.url, '01_Home');
 
+// Your test
 export default function () {
   check200(homepage.open())
 }
